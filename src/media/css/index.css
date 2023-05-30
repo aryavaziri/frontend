@@ -1,0 +1,177 @@
+main {
+  min-height: 75vh;
+}
+
+.animation1 {
+  animation: animation1 1s ease 0 1 forwards fill-mode;
+
+}
+
+@keyframes animation1 {
+  0% {
+    transform: rotate(0);
+  }
+
+  25% {
+    transform: rotate(15deg);
+  }
+
+  50% {
+    transform: rotate(0);
+  }
+
+  75% {
+    transform: rotate(-15deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+
+}
+
+.materials>div:hover {
+  transform: scale(1.1);
+}
+
+.on-hover {
+  transition: 1s;
+}
+
+.on-hover:hover {
+  box-shadow: "0 0 15px 12px black";
+  transform: scale(1.1);
+}
+
+.materials>div {
+  transition: 1s;
+}
+
+.arrow-up {
+  margin: 4px;
+  width: 0;
+  height: 0;
+  border-left: 42px solid transparent;
+  border-right: 42px solid transparent;
+
+  border-bottom: 26px solid gainsboro;
+}
+
+.arrow-down {
+  margin: 4px;
+  width: 0;
+  height: 0;
+  border-left: 42px solid transparent;
+  border-right: 42px solid transparent;
+
+  border-top: 26px solid gainsboro;
+}
+
+.mat1a {
+  border-top: 26px solid aquamarine
+}
+
+.mat1b {
+  border-bottom: 26px solid aquamarine;
+}
+
+.selected {
+  background: greenyellow;
+}
+
+.mat1 {
+  background-color: aqua !important;
+}
+
+.mat2 {
+  background-color: orange !important;
+}
+
+.mat3 {
+  background-color: red !important;
+}
+
+
+
+.selected2 {
+  transform: scale(1.1);
+  transition: 1s;
+  box-shadow: 0 0 15px 12px greenyellow;
+}
+
+.parent {
+  position: relative;
+  border: 4px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+
+.item {
+  position: absolute;
+  left: 2.5%;
+  top: 45%;
+  height: 10%;
+  width: 10%;
+  transform-origin: 470% 50%;
+}
+
+.btn-saeed {
+  background-color: #2D896E;
+  color: white;
+}
+
+.saeed-color {
+  color: #2D896E;
+}
+
+.saeed-bg {
+  background-color: #2D896E;
+}
+
+#logo {
+  background: linear-gradient(90deg, #2D896E, #091515);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: block;
+}
+
+.sign-in {
+  background-color: #2D896E !important;
+  font-size: 22px !important;
+  font-weight: bold !important;
+  border: none !important;
+}
+
+.sign-in:hover {
+  background-color: #295f4e !important;
+  color: whitesmoke !important;
+  box-shadow: 0 0 8px 4px #B2B2B2da;
+}
+
+.arrange {
+  /* background-color: rgba(255, 0, 0, 0.233); */
+  width: 100%;
+  height: 100%;
+}
+
+.arrange .t {
+  height: 30%;
+  width: 50%;
+  /* background-color: blue; */
+}
+
+.arrange .l {
+  height: 100%;
+  width: 25%;
+  /* background-color:pink; */
+}
+
+.arrange .r {
+  height: 100%;
+  width: 25%;
+  /* background-color:yellowgreen; */
+}
+
+.arrange>*>* {
+  max-height: 130px !important;
+}
